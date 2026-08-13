@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: telegram-drm-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: API_ID
+        value: your_api_id
+      - key: API_HASH
+        value: your_api_hash
+      - key: BOT_TOKEN
+        value: your_bot_token
+      - key: OWNER
+        value: your_username
+      - key: cptoken
+        value: your_classplus_token
